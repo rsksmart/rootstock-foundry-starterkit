@@ -31,7 +31,7 @@ jobs:
 
           # Process README.md
           echo "---" > transformed/README.md
-          echo "sidebar_label: Rootstock Foundry Starter kit" >> transformed/README.md
+          echo "sidebar_label: Foundry" >> transformed/README.md
           echo "sidebar_position: 500" >> transformed/README.md
           echo "title: Rootstock Foundry Starter kit" >> transformed/README.md
           echo "description: 'Whether you are a seasoned developer or just starting your journey into smart contract development, the foundry starter kit provides a solid foundation for building decentralized applications (dApps) on the Rootstock network.'" >> transformed/README.md
@@ -39,7 +39,7 @@ jobs:
           echo "---" >> transformed/README.md
           echo "" >> transformed/README.md
           echo ":::info[Note]" >> transformed/README.md
-          echo "You can add your suggestion on the [Foundry Starter Kit Repository](https://github.com/rsksmart/rootstock-foundry-starterkit.git)" >> transformed/README.md
+          echo "If you wish suggest changes on this document, pleas add your suggestion on the [Foundry Starter Kit Repository](https://github.com/rsksmart/rootstock-foundry-starterkit.git)" >> transformed/README.md
           echo ":::" >> transformed/README.md
           echo "" >> transformed/README.md
           cat README.md >> transformed/README.md
