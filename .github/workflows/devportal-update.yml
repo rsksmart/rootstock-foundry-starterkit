@@ -39,7 +39,7 @@ jobs:
           echo "---" >> transformed/README.md
           echo "" >> transformed/README.md
           echo ":::info[Note]" >> transformed/README.md
-          echo "If you wish suggest changes on this document, please add your suggestion on the [Foundry Starter Kit Repository](https://github.com/rsksmart/rootstock-foundry-starterkit.git)" >> transformed/README.md
+          echo "If you wish to suggest changes on this document, please open a PR on the [Foundry Starter Kit Repository](https://github.com/rsksmart/rootstock-foundry-starterkit.git)" >> transformed/README.md
           echo ":::" >> transformed/README.md
           echo "" >> transformed/README.md
           cat README.md >> transformed/README.md
