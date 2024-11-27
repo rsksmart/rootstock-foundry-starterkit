@@ -45,12 +45,16 @@ jobs:
 
       # Step 3: Commit and Push Changes to Devportal Repository
       - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEVPORTAL_DOCS_UPDATE_TOKEN }}
         run: |
           cd devportal
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/02-developers/04-quickstart/foundry.md 
           git commit -m "Automated update from repository"
+          # Configure the remote URL with the token for authentication
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/rsksmart/devportal.git
           git push -f origin update-from-foundry-starter
 
       # Step 4: Create a Pull Request in the Devportal Repository
