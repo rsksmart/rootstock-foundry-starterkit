@@ -11,7 +11,7 @@ In this tutorial, you'll learn how to set up your Foundry development environmen
 Before starting the dApp, make sure to have the following prerequisites:
 
 1. **Familiarity with Smart Contracts:**
-   - If you’re new to smart contracts, consider learning the basics. Understanding how smart contracts work will enhance your experience with Rootstock development.
+   - If you’re new to smart contracts, consider learning the basics. Understanding how smart contracts work will enhance your experience with developing on Rootstock.
 
 2. **Foundry installation using [Foundryup](https://book.getfoundry.sh/getting-started/installation#using-foundryup):**
 - To install, visit the official [Foundry documentation](https://book.getfoundry.sh/getting-started/installation#using-foundryup), for more information.
@@ -165,4 +165,4 @@ The result should look like this:
 
 ## Final Comments
 
-You can explore the folders and files within the starter kit and customize the kit to suit your project’s needs. You can also learn how to import `.env` variables for deploying smart contracts, test smart contracts with solidity, etc..
+You can explore the folders and files within the starter kit and customize the kit to suit your project’s needs. You can also learn how to import `.env` variables for deploying smart contracts, test smart contracts with solidity, etc.
