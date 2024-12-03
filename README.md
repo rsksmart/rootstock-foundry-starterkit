@@ -1,3 +1,7 @@
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/rsksmart/rootstock-foundry-starterkit/badge)](https://scorecard.dev/viewer/?uri=github.com/rsksmart/rootstock-foundry-starterkit)
+[![CodeQL](https://github.com/rsksmart/rskj/workflows/CodeQL/badge.svg)](https://github.com/rsksmart/rootstock-foundry-starterkit/actions?query=workflow%3ACodeQL)
+<img src="img/rootstock-logo.png" alt="RSK Logo" style="width:100%; height: auto;" />
+
 # Rootstock Foundry Starter Kit
 
 Whether you’re a seasoned developer or just starting your journey into smart contract development, the foundry starter kit provides a solid foundation for building decentralized applications (dApps) on the Rootstock network.
