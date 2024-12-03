@@ -24,7 +24,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [solidity]
+        language: [python]
 
     steps:
       - name: Checkout
