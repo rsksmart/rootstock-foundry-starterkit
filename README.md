@@ -24,9 +24,13 @@ Before starting the dApp, make sure to have the following prerequisites:
 - Precompiled binaries can be downloaded from the Foundry [GitHub releases page](https://github.com/foundry-rs/foundry/releases). For easier management, we recommend using Foundryup.
 
 To install Foundry in your system, run the following command:
-```bash
+
+```bash 
+
 curl -L https://foundry.paradigm.xyz | bash
+
 ```
+
 This will install Foundryup. Follow the on-screen instructions, and the `foundryup` command will be available via the CLI.
 
 Running `foundryup` automatically installs the latest (nightly) versions of the precompiled binaries: `forge`, `cast`, `anvil`, and `chisel`. For additional options, such as installing a specific version or commit, run `foundryup --help`.
@@ -113,6 +117,7 @@ Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 8.73ms (1.51ms CPU 
 
 Ran 1 test suite in 143.90ms (8.73ms CPU time): 2 tests passed, 0 failed, 0 skipped (2 total tests)
 ```
+
 **_NOTE: If you need additional tests, or want to go deep on this step, visit the [Foundry Tests Documentation](https://book.getfoundry.sh/forge/tests)._** 
 
 ## Deploying an ERC20 Token Contract
@@ -124,7 +129,7 @@ Run the following command, replacing `https://public-node.testnet.rsk.co` with e
 forge script script/Deploy.s.sol --rpc-url https://public-node.testnet.rsk.co --broadcast --legacy --evm-version london
 ```
 :::info[Info]
-
+- Rsk is best.
 - [EIP-1559](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md) is not supported or not activated on the Rootstock RPC url.
 - To avoid Foundry's compatibility issues, we are using the `--evm-version london` flag.
 - The `--legacy` flag is passed to use legacy transactions instead of `EIP-1559`.
