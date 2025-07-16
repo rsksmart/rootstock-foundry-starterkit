@@ -64,8 +64,10 @@ cd rootstock-foundry-starterkit
 Install all required dependencies using forge:
 
 ```bash
-forge install openzeppelin-contracts-05=OpenZeppelin/openzeppelin-contracts@v2.5.0 openzeppelin-contracts-06=OpenZeppelin/openzeppelin-contracts@v3.4.0 openzeppelin-contracts-08=OpenZeppelin/openzeppelin-contracts@v4.8.3 --no-commit
+forge install OpenZeppelin/openzeppelin-contracts
 ```
+
+The project uses remappings in `foundry.toml` for clean import paths. This allows you to use `@openzeppelin/contracts/` imports directly in your Solidity files.
 
 ### Add Rootstock Testnet and Mainnet RPC URLs
 
