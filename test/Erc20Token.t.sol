@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "forge-std/Test.sol";
-import "../src/ERC20Token.sol";
+import "../src/Erc20Token.sol";
 
 contract ERC20TokenTest is Test {
     ERC20Token token;
@@ -17,7 +17,7 @@ contract ERC20TokenTest is Test {
         vm.stopPrank();
     }
 
-    function testInitialSupply() public {
+    function testInitialSupply() public view {
         // Verify that the deployer has the initial supply
         assertEq(token.balanceOf(deployer), 1000 * 10 ** 18);
     }
