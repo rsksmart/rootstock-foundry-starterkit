@@ -123,13 +123,8 @@ This section deploys an ERC20 token contract (fungible token) on the Rootstock n
 Run the following command, replacing `https://public-node.testnet.rsk.co` with either `rskTestnet` or `rskMainnet` rpc url if you have the testnet and mainnet environments configured for your desired deployment environment, for this guide, we will use the public node url:
 
 ```bash
-forge script script/Deploy.s.sol --rpc-url https://public-node.testnet.rsk.co --broadcast --legacy --evm-version london
+forge script script/Deploy.s.sol --rpc-url https://public-node.testnet.rsk.co --broadcast --evm-version cancun
 ```
-:::info[Info]
-
-- [EIP-1559](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md) is not supported or not activated on the Rootstock RPC url.
-- To avoid Foundry's compatibility issues, we are using the `--evm-version london` flag.
-- The `--legacy` flag is passed to use legacy transactions instead of `EIP-1559`.
 - You can remove the `--broadcast` flag if you want to simulate the transaction without broadcasting it.
 :::
 
@@ -139,20 +134,36 @@ forge script script/Deploy.s.sol --rpc-url https://public-node.testnet.rsk.co --
 
 The result should look like this:
 ```bash
-Sending transactions [0 - 0].
-⠁ [00:00:00] [###############################################################################################################################################] 1/1 txes (0.0s)##
-Waiting for receipts.
-⠉ [00:00:25] [###########################################################################################################################################] 1/1 receipts (0.0s)
-##### 31
-✅  [Success]Hash: 0x48ea2b06b39cd436a2d7564e20ea5bb598ddc2769e6b18c855170f0e9e4d5687
-Contract Address: 0x499e802a6825d30482582d9b9dd669ba82ba8ba4
-Block: 5071408
-Gas Used: 106719
+## Setting up 1 EVM.
+
+==========================
+
+Chain 31
+
+Estimated gas price: 0.004445349 gwei
+
+Estimated total gas used for script: 1224342
+
+Estimated amount required: 0.000005442627485358 tRBTC
+
+==========================
+
+##### rsk-testnet
+✅  [Success] Hash: 0x90aa81ad4e023ce4a2ab964b5aad7f425079d8fd717ec73fd76434ca85d10bb1
+Contract Address: 0xF85524C329337Ae5D240F194454c691383ebCF86
+Block: 6610544
+Paid: 0.000004152853926498 tRBTC (934202 gas * 0.004445349 gwei)
+
+✅ Sequence #1 on rsk-testnet | Total Paid: 0.000004152853926498 tRBTC (934202 gas * avg 0.004445349 gwei)
+                                                                                
 
 ==========================
 
 ONCHAIN EXECUTION COMPLETE & SUCCESSFUL.
-Total Paid: 0. ETH (106719 gas * avg 0 gwei)
+
+Transactions saved to: /Users/rookiecol/Documents/code/rootstock/starter-kits/rootstock-foundry-starterkit/broadcast/Deploy.s.sol/31/run-latest.json
+
+Sensitive values saved to: /Users/rookiecol/Documents/code/rootstock/starter-kits/rootstock-foundry-starterkit/cache/Deploy.s.sol/31/run-latest.json
 ```
 
 ## Interacting with the Contract - Minting a Token
